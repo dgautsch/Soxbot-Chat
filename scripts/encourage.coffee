@@ -9,8 +9,11 @@
 #
 # Commands:
 #   hubot encourage me
-#   hubot encourge name
+#   hubot encourage name
 #   hubot encourage all
+#   hubot discourage me
+#   hubot discourage name
+#   hubot discourage all
 #
 # Author:
 #	WoogieNoogie
