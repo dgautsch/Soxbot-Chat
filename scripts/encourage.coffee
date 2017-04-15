@@ -75,8 +75,8 @@ module.exports = (robot) ->
 	robot.respond /(discourage )(.*)/i, (msg) ->
 		discourage = msg.random insults
 
-		discouragingme = () -> msg.send encourage.replace "%", msg.message.user.name
-		discouragingyou = () -> msg.send encourage.replace "%", msg.match[2]
+		discouragingme = () -> msg.send discourage.replace "%", msg.message.user.name
+		discouragingyou = () -> msg.send discourage.replace "%", msg.match[2]
 
 		if msg.match[2] == 'me'
 			discouragingme()
