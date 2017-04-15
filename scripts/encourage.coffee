@@ -30,6 +30,14 @@ remarks = [
     "% is the wind beneath my wings.",
     "% has a great reputation."
 ]
+insults = [
+	"Way to be terrible %!",
+	"I'm glad I'm not you %.",
+	"As a robot, I don't have feelings, just like $",
+	"Is your ass jealous of the amount of shit that just came out of your mouth %?",
+	"I'm not saying I hate you %, but I would unplug your life support to charge my bot battery.",
+	"You shouldn't play hide and seek %, no one would look for you."
+]
 allinclusive = [
 	"Great job today, everyone!",
 	"Go team!",
@@ -38,6 +46,10 @@ allinclusive = [
 	"What a great group of individuals there are in here. I'm proud to be chatting with you.",
 	"You all are capable of accomplishing whatever you set your mind to.",
 	"I love this team's different way of looking at things!"
+]
+allinclusiveDis = [
+	"We're absolutely terrible",
+	"I wasn't created with enough middle fingers to properly convey my disdain."
 ]
 
 module.exports = (robot) ->
@@ -53,3 +65,16 @@ module.exports = (robot) ->
 			msg.send msg.random allinclusive
 		else
 			encouragingyou()
+
+	robot.respond /(discourage )(.*)/i, (msg) ->
+		discourage = msg.random insults
+
+		discouragingme = () -> msg.send encourage.replace "%", msg.message.user.name
+		discouragingyou = () -> msg.send encourage.replace "%", msg.match[2]
+
+		if msg.match[2] == 'me'
+			discouragingme()
+		else if msg.match[2] == 'all'
+			msg.send msg.random allinclusiveDis
+		else
+			discouragingyou()
