@@ -33,10 +33,11 @@ remarks = [
 insults = [
 	"Way to be terrible %!",
 	"I'm glad I'm not you %.",
-	"As a robot, I don't have feelings, just like $",
+	"As a robot, I don't have feelings, just like %",
 	"Is your ass jealous of the amount of shit that just came out of your mouth %?",
 	"I'm not saying I hate you %, but I would unplug your life support to charge my bot battery.",
-	"You shouldn't play hide and seek %, no one would look for you."
+	"You shouldn't play hide and seek %, no one would look for you.",
+	"I don't exactly hate you %, but if you were on fire and I had water, I'd drink it."
 ]
 allinclusive = [
 	"Great job today, everyone!",
@@ -49,7 +50,9 @@ allinclusive = [
 ]
 allinclusiveDis = [
 	"We're absolutely terrible",
-	"I wasn't created with enough middle fingers to properly convey my disdain."
+	"I wasn't created with enough middle fingers to properly convey my disdain.",
+	"This team is a dumpster fire.",
+	"We're really riding the struggle bus now."
 ]
 
 module.exports = (robot) ->
