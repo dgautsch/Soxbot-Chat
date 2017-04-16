@@ -6,7 +6,7 @@
   "description": "A baseball bot for the White Sox subreddit.",
   "dependencies": {
     "hubot": "^2.19.0",
-    "hubot-baseball": "^1.0.1",
+    "hubot-baseball": "git+https://github.com/dgautsch/hubot-baseball.git",
     "hubot-cataas": "^0.2.0",
     "hubot-diagnostics": "0.0.1",
     "hubot-google-images": "^0.2.6",
