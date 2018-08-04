@@ -5,7 +5,7 @@
   "author": "dgautsch@gmail.com",
   "description": "A baseball bot for the White Sox subreddit.",
   "dependencies": {
-    "hubot": "^2.19.0",
+    "hubot": "^3.1.0",
     "hubot-baseball": "git+https://github.com/dgautsch/hubot-baseball.git",
     "hubot-cataas": "^0.2.0",
     "hubot-diagnostics": "0.0.1",
